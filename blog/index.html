@@ -1,0 +1,54 @@
+---
+layout: default
+title: 博客
+---
+
+<div id="blogs" class="blog">
+	<h2 class="ch2">文章列表</h2>
+	<!-- technology-blog -->
+		{% for post in paginator.posts %}
+			<div class="post-grid wow fadeInDown"  data-wow-duration=".8s">
+				<div class="post-grid-left">
+					<a href="{{ post.url }}" target="_blank"><img src="{{ site.baseurl }}/images/blog/{{ post.cover }}" alt=" " class="img-responsive"></a>
+				</div> 
+				<div class="post-grid-right">
+					<a href="{{ post.url }}" target="_blank">{{ post.title }}</a>
+					<h4>{{ post.date | date_to_string }}</h4>
+					<p>{{ post.excerpt | strip_html }}</p>
+				</div>
+				<div class="more">
+					<a href="{{ post.url }}" target="_blank">更多</a>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		{% endfor %}
+		<div class="clearfix"> </div>
+	<!-- technology-blog -->
+	<!-- technology-paging -->
+	{% if paginator.total_pages > 1 %}
+		<nav>
+			<ul class="pagination pagination-lg">
+				{% if paginator.previous_page %}
+					<li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Previous"><span aria-hidden="true"><<</span></a></li>
+ 				{% endif %}
+ 				{% for page in (1..paginator.total_pages) %}
+					{% if page == paginator.page %}
+						<li><span class="cantsel">{{ page }}</span></li>
+					{% elsif page == 1 %}
+						<li><a href="{{ '/blog/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+  					{% else %}
+						<li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+  					{% endif %}
+ 				{% endfor %}
+ 				{% if paginator.next_page %}
+					<li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Next"><span aria-hidden="true">>></span></a></li>
+ 				{% endif %}
+			</ul>
+		</nav>
+	{% endif %}
+	<!-- technology-paging -->
+</div>
+
+
+
+

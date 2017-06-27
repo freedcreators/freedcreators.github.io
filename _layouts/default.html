@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+{% include head.html %}
+</head>
+<body>
+{% include toolbar.html %}
+{% include header.html %}
+{% if page.title == '主页' %}
+	{% include banner.html %}
+	{% include gallery.html %}
+{% else %}
+	<div class="banner"></div>
+{% endif %}
+<div class="technology">
+	<div class="container">
+		<!-- technology-left -->
+		<div class="technology-left">
+			{{ content }}
+		</div>
+		<!-- technology-left -->
+		{% include techright.html %}
+	</div>
+</div>
+{% include footer.html %}
+{% include copyright.html %}
+</body>
+</html>

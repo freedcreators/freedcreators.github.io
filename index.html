@@ -1,0 +1,44 @@
+---
+layout: default
+title: 主页
+---
+
+<!-- technology-top -->
+{% for post in site.tags.top limit:1 %}
+	<div class="card-view wow fadeInDown"  data-wow-duration=".8s">
+		<a href="{{ post.url }}"><img src="{{ site.baseurl }}/images/blog/{{ post.cover}}" class="img-responsive" alt=""></a>
+		<h3><a href="{{ post.url }}">{{ post.title }}【置顶】</a></h3>
+		<h6>BY <a href="/about/">{{ site.author }} </a>{{ post.date | date_to_string }}.</h6>
+		<p>{{ post.excerpt | strip_html }}</p>
+		<div class="btn">
+			<a href="{{ post.url }}" target="_blank">阅读全文</a>
+		</div>
+		<!--Share button-->
+		<!--Share button-->
+		<div class="clearfix"></div>
+	</div>
+	<div class="clearfix"></div>
+{% endfor %}
+<!-- technology-top -->
+<!-- technology-blogs -->
+{% for post in site.posts limit:3 %}
+	<div class="card-view wow fadeInDown"  data-wow-duration=".8s">
+		<div class="card-view-left">
+			<a href="{{ post.url }}"><img src="{{ site.baseurl }}/images/blog/{{ post.cover }}" class="img-responsive" alt=""></a>
+		</div>
+		<div class="card-view-right">
+			<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+			<h6>BY <a href="{{ post.url }}">{{ site.author }} </a>{{ post.date | date_to_string }}.</h6>
+			<p>{{ post.excerpt | strip_html }}</p>
+			<div class="btn">
+				<a href="{{ post.url }}" target="_blank">阅读全文</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+{% endfor %}
+<div class="card-view-more wow fadeInDown"  data-wow-duration=".8s">
+	<a href="{{ site.baseurl }}/blog/">查看所有文章</a>
+</div>
+<!-- technology-blogs -->

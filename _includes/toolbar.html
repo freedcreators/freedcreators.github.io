@@ -1,0 +1,38 @@
+<nav class="toolbar">
+	<div class="container">
+		<div class="logo wow fadeInLeft"   data-wow-duration=".8s">
+			<a href="/">
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 63 28" style="enable-background:new 0 0 312.8 56.8;" xml:space="preserve">
+					<path class="st0" d="m28.835 1.448c-0.937 0 -1.696 0.756 -1.696 1.69c0 0.933 0.759 1.69 1.696 1.69c0.937 0 1.696 -0.756 1.696 -1.69c0 -0.933 -0.759 -1.69 -1.696 -1.69zm-10.904 -1.448v1.448h-8.723v2.897h8.723v0.966h2.908v-0.966h5.331v-2.897h-5.331v-1.448zm30.773 0c-0.854 0 -1.553 0.63 -1.672 1.448h-12.624v2.897v1.448h2.908v-1.448h22.292v1.448h2.908v-1.448v-2.897h-12.14c-0.118 -0.818 -0.818 -1.448 -1.672 -1.448zm-38.527 5.793v2.897v9.655h2.908v-9.655h13.085v6.759h-10.042l-2.908 2.897h15.858v-9.655v-2.897zm25.2 0.966v0.241l-0.485 5.552h2.908l0.253 -2.897h21.07v1.426l-11.472 2.015l-6.459 -1.134v2.269l-7.269 1.277v2.897l13.728 -2.411l15.349 2.696v-2.897l-7.104 -1.248l5.848 -1.027h0.287v-0.05v-2.897v-0.915v-2.897zm-22.05 17.379c-0.937 0 -1.696 0.756 -1.696 1.69c0 0.933 0.759 1.69 1.696 1.69c0.937 0 1.696 -0.756 1.696 -1.69c0 -0.933 -0.759 -1.69 -1.696 -1.69zm-10.419 -24.138v9.172h-2.908v2.897h2.908v15.931h2.908v-15.931h2.908v-2.897h-2.908v-9.172zm21.808 18.828v0.966h-15.992v2.897h15.992v2.414h-6.182l2.908 2.897h6.182v-5.31h2.908v-2.897h-2.908v-0.966zm10.662 0.483v2.897v2.897v2.897h23.528l-2.908 -2.897h-17.713v-2.897h20.838v5.793h2.908v-5.793v-2.897z"></path>
+				</svg>
+			</a>
+		</div>
+		<div class="btn-menu wow fadeInRight"   data-wow-duration=".8s">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"data-target="#example-navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="list-menu collapse navbar-collapse" id="example-navbar-collapse">
+			<ul>
+				{% if page.title == '主页' %}
+					<li class="active"><a href="/">首页</a></li>
+				{% else %}
+					<li><a href="/">首页</a></li>
+				{% endif %}
+				{% if page.title == '博客' %}
+					<li class="active"><a href="/blog/">博客</a></li>
+				{% else %}
+					<li><a href="/blog/">博客</a></li>
+				{% endif %}
+				{% if page.title == '关于' %}
+					<li class="active"><a href="/about">关于</a></li>
+				{% else %}
+					<li><a href="/about/">关于</a></li>
+				{% endif %}
+			</ul>
+		</div>
+	</div>
+</nav>
