@@ -146,11 +146,11 @@ label.on{
 .home-banner h2 {
     font-size:2.5em;
     font-weight: 600;
-    color: #fff;
+    color: #333333;
 }
 .home-banner p {
     font-size: 1.2em;
-    color: rgba(255, 255, 255, 0.46);
+    color: #333333;
     font-weight: 400;
     line-height: 1.8em;
     margin: 1em auto 2em;
