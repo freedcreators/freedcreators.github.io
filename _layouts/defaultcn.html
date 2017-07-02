@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-{% include head.html %}
+{% include headcn.html %}
 </head>
 <body>
-{% include toolbar.html %}
-{% include header.html %}
-{% if page.title == 'Home' %}
-	{% include banner.html %}
-	{% include gallery.html %}
+{% include toolbarcn.html %}
+{% include headercn.html %}
+{% if page.title == '主页' %}
+	{% include bannercn.html %}
+	{% include gallerycn.html %}
 {% else %}
 	<div class="banner"></div>
 {% endif %}
@@ -19,10 +19,10 @@
 			{{ content }}
 		</div>
 		<!-- technology-left -->
-		{% include techright.html %}
+		{% include techrightcn.html %}
 	</div>
 </div>
-{% include footer.html %}
-{% include copyright.html %}
+{% include footercn.html %}
+{% include copyrightcn.html %}
 </body>
 </html>

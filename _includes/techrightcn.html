@@ -11,8 +11,8 @@
 		<!-- search -->
 		<!-- hot -->
 		<div class="hot-post">
-			<h4>Hot</h4>
-			{% for post in site.tags.en limit:5 %}
+			<h4>热门美文</h4>
+			{% for post in site.tags.cn limit:5 %}
 			<div class="blog-grids wow fadeInDown"  data-wow-duration=".8s">
 				<div class="blog-grid-left">
 					<a href="{{ post.url }}" target="_blank"><img src="{{ site.baseurl }}/images/blog/{{ post.cover }}" class="img-responsive" alt=""></a>
