@@ -4,6 +4,14 @@
 {% include head.html %}
 </head>
 <body>
+<DIV id=loading style="position:absolute; left:0px; top:0px; height:2000px; width:100%; background-color: #000; z-index:1; text-align:center">
+<img style=" width:80px; height:80px; z-index:1; margin:300px auto" src="{{ site.baseurl }}/images/loading.gif" alt=""></div>
+<SCRIPT language=JavaScript>
+function closeDiv()
+{
+document.getElementById('loading').style.visibility='hidden';
+}
+</SCRIPT>
 {% include toolbar.html %}
 {% include header.html %}
 {% if page.title == 'Home' %}
@@ -24,5 +32,8 @@
 </div>
 {% include footer.html %}
 {% include copyright.html %}
+<SCRIPT language=JavaScript>
+closeDiv()
+</SCRIPT>
 </body>
 </html>
