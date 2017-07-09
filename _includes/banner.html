@@ -1,7 +1,42 @@
-<div class="home-banner">
+<!--<div class="home-banner">
 	<div class="container">	
 		<h2>Welcome to block chain club- Freed Coin</h2>
 		<p>What Makes Freed coin  unique among block chains?</p>
 		<a href="/about/">Read more</a>
 	</div>
-</div>
+</div>-->
+<div class="containerl">
+		<ul class="mySlideshow">
+			<li class="first">
+				<a href="#" target="_blank" class="animated fadeInLeft">
+					<img src="images/hd-logo.png" width="330" height="255" alt="Harley-Davidson">
+				</a>
+				<div class="animated fadeInRight">Welcome to block chain club- Freed</div>
+			</li>
+			<li class="second">
+				<img src="images/second-title.png" class="animated fadeInRight">
+			</li>
+			<li class="third">
+				<img src="images/third-title.png" class="animated fadeInLeft">
+			</li>
+			<li class="fourth">
+				<img src="images/fourth-title.png" class="animated fadeInRight">
+			</li>
+			<li class="fifth">
+				<img src="images/fifth-title.png" class="animated fadeInLeft">
+			</li>
+		</ul>
+	</div>
+
+	
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/jquery.edslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			//Call plugin
+			$('.mySlideshow').edslider({
+				width : '100%',
+				height: 500
+			});
+		});
+	</script>
