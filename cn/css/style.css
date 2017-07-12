@@ -13,7 +13,7 @@ body a{
 h1,h2,h3,h4,h5,h6{
 	margin:0;
 	font-family: 'Raleway',"微软雅黑", sans-serif;
-}	
+}
 p{
 	margin:0;
 	font-family: 'Open Sans', sans-serif;
@@ -294,7 +294,7 @@ label.on{
   font-family: 'Open Sans', sans-serif;
 }
 .subscibe form input[type="submit"] {
-  background:#fa4b2a; 
+  background:#fa4b2a;
   padding: 10px 0;
   color: #fff;
   font-size: 14px;
@@ -658,7 +658,7 @@ label.on{
 }
 }
 
-/*-- slider 
+/*-- slider
 body{
 	margin:0;
 	font-family:Arial, sans-serif;
@@ -729,6 +729,13 @@ ul{
 	background:url("../images/fifth.png") center no-repeat;
 }
 .fifth img{
+	top:120px;
+	left:21%;
+}
+.sixth{
+	background:url("../images/sixth.png") center no-repeat;
+}
+.sixth img{
 	top:120px;
 	left:21%;
 }
@@ -833,7 +840,7 @@ label.on {
 }
 .home-banner h2 {
     font-size: 1em;
-	
+
 }
 .home-banner p {
     font-size: 0.8125em;
