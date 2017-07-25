@@ -683,6 +683,9 @@ ul{
 .mySlideshow .animated{
 	position:absolute;
 }
+.mySlideshow li{
+	height: 500px;
+}
 .first{
 	background:url("../images/first.png") center no-repeat;
 }
@@ -739,6 +742,10 @@ ul{
 	top:120px;
 	left:21%;
 }
+.coin-video{
+	width: 100%;
+	height: 500px;
+}
 
 /*-- responsive design --*/
 @media (max-width:736px) {
@@ -749,6 +756,12 @@ ul{
 
 .search input[type="search"] {
     width: 92%;
+}
+.coin-video{
+	height: 405px;
+}
+.mySlideshow{
+	height: 300px;
 }
 /*-- footer --*/
 }
@@ -769,6 +782,9 @@ ul{
 }
 .banner{
 	min-height: 160px;
+}
+.coin-video{
+	height: 352px;
 }
 .search input[type="search"] {
     width: 91%;
